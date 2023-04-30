@@ -51,20 +51,20 @@ def textEmbeddings(data):
     pass
 
 def ai(category, data):
-#     qa = textEmbeddings(data)
-#     query = "please suggest "+ category +" interview questions"
-#     data = list(filter(None, qa.run(query).split('\n')))
-#     results = list(filter(lambda x: x != ' ', data))
-    results = ['1. What inspired you to pursue a career in data science?',
-             '2. What experience do you have in predictive modelling, data processing, and data mining algorithms?',
-             '3. What challenges have you faced in building data-intensive applications?',
-             '4. Tell us about your experience with scripting languages such as Python.',
-             '5. How have you used NLP in your past projects?',
-             '6. Describe the process of creating, developing, testing, and deploying diverse services.',
-             '7. What motivated you to develop an NLP powered adaptive Chatbot?',
-             '8. How did you deploy the Joey Chatbot (Text to SQL) project?',
-             '9. What techniques have you used to process, clean, and verify real-time data integrity?',
-             '10. What challenges did you face while mentoring fellowship engineers on machine learning?']
+    qa = textEmbeddings(data)
+    query = "please suggest "+ category +" interview questions"
+    data = list(filter(None, qa.run(query).split('\n')))
+    results = list(filter(lambda x: x != ' ', data))
+#     results = ['1. What inspired you to pursue a career in data science?',
+#              '2. What experience do you have in predictive modelling, data processing, and data mining algorithms?',
+#              '3. What challenges have you faced in building data-intensive applications?',
+#              '4. Tell us about your experience with scripting languages such as Python.',
+#              '5. How have you used NLP in your past projects?',
+#              '6. Describe the process of creating, developing, testing, and deploying diverse services.',
+#              '7. What motivated you to develop an NLP powered adaptive Chatbot?',
+#              '8. How did you deploy the Joey Chatbot (Text to SQL) project?',
+#              '9. What techniques have you used to process, clean, and verify real-time data integrity?',
+#              '10. What challenges did you face while mentoring fellowship engineers on machine learning?']
     results = "\n".join(results)
     
     return results
