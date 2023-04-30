@@ -87,9 +87,9 @@ if uploaded_file is not None:
 
 category = ["Technical", "Education Background", "Behaviour", "Project Specific"]
 
-for value in category:
+# for value in category:
 
-    with st.expander(value + " Questions"):
-        response  = ai(value, resumeData)
-        st.write(response)
+#     with st.expander(value + " Questions"):
+#         response  = ai(value, resumeData)
+#         st.write(response)
 
