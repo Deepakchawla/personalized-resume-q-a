@@ -7,7 +7,6 @@ tiktoken
 pandas 
 chroma 
 chromadb
-unstructured
-unstructured[local-inference]
+unstructured-inference
 --find-links https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
 detectron2
