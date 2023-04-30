@@ -91,6 +91,7 @@ response = None
 for value in category:
 
     with st.expander(value + " Questions"):
-        response  = ai(value, resumeData)
+        if response != None:
+            response  = ai(value, resumeData)
         st.write(response)
 
