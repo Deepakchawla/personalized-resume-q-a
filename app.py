@@ -4,7 +4,9 @@ from io import StringIO
 import os
 from langchain.llms import OpenAI
 import pandas as pd
-os.environ["OPENAI_API_KEY"] = "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"
+import openai
+
+openai.api_key  = "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"
 
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
