@@ -1,10 +1,3 @@
 langchain 
 openai 
-pdfminer 
-unstructured 
-pdfminer.six 
-tiktoken 
-pandas 
-chroma 
-chromadb
-streamlit
+
