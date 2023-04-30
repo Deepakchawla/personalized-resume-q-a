@@ -6,6 +6,11 @@ except ModuleNotFoundError:
     import sys
     subprocess.check_call([sys.executable, "-m", "pip", "install", 'git+https://github.com/facebookresearch/detectron2.git'])
 
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", 'unstructured[local-inference]'])
+
+
 
 import pandas as pd
 from io import StringIO
