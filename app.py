@@ -87,7 +87,7 @@ if uploaded_file is not None:
     resumeData = loader.load()
 
 category = ["Technical", "Education Background", "Behaviour", "Project Specific"]
-
+response = None
 for value in category:
 
     with st.expander(value + " Questions"):
