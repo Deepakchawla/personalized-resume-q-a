@@ -5,10 +5,7 @@ except ModuleNotFoundError:
     import subprocess
     import sys
     subprocess.check_call([sys.executable, "-m", "pip", "install", 'git+https://github.com/facebookresearch/detectron2.git'])
-
-import subprocess
-import sys
-subprocess.check_call([sys.executable, "-m", "pip", "install", 'unstructured[local-inference]'])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'unstructured[local-inference]'])
 
 
 
